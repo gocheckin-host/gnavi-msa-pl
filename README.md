@@ -9,7 +9,7 @@ Presentation layer using AngularJS MVW framework for Web UI.
 -------------
 Notice
 -------------
-Because there is no Service Registry applied, you need to edit the presentation_layer/js/services/services.js file.
+Because there is no Service Registry applied, you need to edit the /js/services/services.js file.
 
 ```
 var areaServiceURI = "http://gnavi-msa-bl-area.<your_cf_domain>";
@@ -22,7 +22,6 @@ Deployment to Cloud Foundry
 -------------
 bower install dependencies:
 ```
-cd ./presentation_layer/
 bower install
 ```
 
@@ -75,7 +74,13 @@ curl -X GET "http://localhost:9000/api/categories"
 curl -X GET "http://localhost:9000/api/count_by_category"
 curl -H "Content-Type: application/json" -X POST "http://localhost:9000/api/count_by_cat_area" -d '{"areaList":[{"area_code":"AREA110","area_name":"関東"},{"area_code":"AREA120","area_name":"関西"},{"area_code":"AREA130","area_name":"中部"}],"catList":[{"category_l_code":"RSFST03000","category_l_name":"すし・魚料理・シーフード"}]}'
 ```
+-------------
+Schedule & Progress of Training Steps
+-------------
 
-Follow the TODOs at the following files.
-/manifest.yml
-/presentation_layer/js/services/services.js
+###Follow the TODOs at the following files.
+
+**/js/services/services.js**
++ Step1: Cover TODO_01, 02, 03 & 04.
++ Step2: Cover TODO_05.
++ Step3: Cover TODO_06.

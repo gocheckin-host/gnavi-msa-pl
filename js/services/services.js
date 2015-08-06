@@ -1,4 +1,5 @@
 /*
+
   TODO_01
   Set the correct service URIs:
   var areaServiceURI = "http://gnavi-msa-bl-area.<your_cf_domain>";
@@ -38,7 +39,19 @@
       return deferred.promise;
     };
 
-  2. invoke the REST API methods - POST method
+  2. Reference to getGnaviPrefs, implement getGnaviAreas.
+
+  3. Reference to getGnaviPrefs, implement getGnaviCats.
+
+  TODO_05
+  Implement the methods of the services.
+  1. Reference to getGnaviPrefs, implement getCountByArea.
+
+  2. Reference to getGnaviPrefs, implement getCountByCat.
+
+  TODO_06
+  Implement the methods of the services.
+  1. invoke the REST API methods - POST method
     gnaviAPI.getCountByAreaCat = function(jsonParam) {
       var deferred = $q.defer();
 
@@ -57,6 +70,8 @@
 
       return deferred.promise;
     };
+
+  2. Reference to getCountByAreaCat, implement getCountByCatArea.
 
 */
 
